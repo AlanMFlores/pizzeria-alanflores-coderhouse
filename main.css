@@ -116,13 +116,46 @@ p, h1, h2, h3 {
     width: 110px;
 }
 
+.main-wrapper {
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+}
+
 .nav-list {
-    display: none;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.nav-list-item {
+    padding: 20px;
+    list-style: none;
+}
+
+.nav-list-item a{
+    color: #151515;
 }
 
 .hamb-btn {
     background-color: transparent;
     border: none;
+}
+
+#check-btn {
+    display: none;   
+}
+
+.hamb-menu {
+    position: relative;
+    z-index: 10;
+}
+
+#check-btn:checked ~ .nav {
+    top: 0;
 }
 
 .pedir-btn {
