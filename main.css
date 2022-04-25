@@ -115,6 +115,7 @@ p, h1, h2, h3 {
 
 .header-logo {
     width: 110px;
+    animation: logo-rotation 5s infinite ease-in-out;
 }
 
 .hamb-menu {
@@ -380,6 +381,35 @@ p, h1, h2, h3 {
     margin-bottom: var(--margin-bottom-spacing-medium);
 }
 
+.carrousel {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    15% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    35% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    55% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    75% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    95% {margin-left: -400%;}
+}
+
+.comentarios-slide {
+    display: flex;
+    width: 500%;
+    animation: slider 20s infinite ease-in-out;
+}
+
 .comentarios-title {
     width: 225px;
     margin: 0 auto;
@@ -390,9 +420,10 @@ p, h1, h2, h3 {
 }
 
 .comentarios-card {
-    padding: 30px 40px;
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    padding: 30px 40px;
+    margin: 0 10px;
     margin-bottom: var(--margin-bottom-spacing-paragraph);
     border-radius: 10px;
     background-color: var(--clr-white-color);
@@ -803,6 +834,26 @@ table {
 
 */
 
+/* 425px */
+
+@media screen and (min-width: 425px) {
+    .carrousel {
+        width: 400px;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+/* 425px */
+
+@media screen and (min-width: 600px) {
+    .carrousel {
+        width: 500px;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
 /* 600px */
 
 @media screen and (min-width: 600px) {
@@ -1108,31 +1159,6 @@ table {
         width: 600px;
         height: auto;
         overflow: hidden;
-    }
-
-    @keyframes slider {
-        0% {margin-left: 0%;}
-        15% {margin-left: 0%;}
-
-        20% {margin-left: -100%;}
-        35% {margin-left: -100%;}
-
-        40% {margin-left: -200%;}
-        55% {margin-left: -200%;}
-
-        60% {margin-left: -300%;}
-        75% {margin-left: -300%;}
-
-        80% {margin-left: -400%;}
-        95% {margin-left: -400%;}
-
-        100% {margin-left: 0%;}
-    }
-
-    .comentarios-slide {
-        display: flex;
-        width: 500%;
-        animation: slider 15s infinite alternate ease-in-out;
     }
 
     .comentarios-title {
