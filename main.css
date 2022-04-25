@@ -164,7 +164,7 @@ p, h1, h2, h3 {
 
 .nav {
     position: fixed;
-    top: -100%;
+    top: -200%;
     width: 100%;
     z-index: 5;
     transition: 400ms;
