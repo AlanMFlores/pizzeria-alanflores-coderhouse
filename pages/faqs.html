@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
+    <!-- ----- Bootstrap ----- -->
+    <link rel="stylesheet" href="../bootstrap.css">
+
     <!-- ----- Stylesheet ----- -->
     <link rel="stylesheet" href="../main.css">
 
@@ -25,7 +28,7 @@
 <body>
     
     <!-- ----- Header ----- -->
-    <header class="header">
+    <header class="header container">
         <a href="../index.html">
             <img src="../images/logo.png" alt="allungata-logo" class="header-logo">
         </a>
@@ -48,75 +51,117 @@
         </nav>
     </header>
 
-    <main class="main">
-        <section class="faqs">
-            <h1 class="faqs-title">Preguntas Frecuentes</h1>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿En que horario están?</h3>
+    <main class="main container mb-5">
+        <h1 class="faqs-title fw-bold">Preguntas Frecuentes</h1>
+        <div class="accordion" id="accordionExample">
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-transparent text-white fs-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿En que horario están?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Estamos de lunes a sábado por la tarde, de 11 a 14:30hs. Y por la noche, de 19 a 22:30hs.</p>
+                  </div>
                 </div>
-                    <p>Estamos de lunes a sábado por la tarde, de 11 a 14:30hs. Y por la noche, de 19 a 22:30hs.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Cuál es la dirección del local?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Cuál es la dirección del local?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Estamos en Bonpland 2456. entre Charcas y Av. Santa fe en el barrio de Palermo Hollywood</p>
+                  </div>
                 </div>
-                    <p>Estamos en Bonpland 2456. entre Charcas y Av. Santa fe en el barrio de Palermo Hollywood</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Cuánto me cuesta el envío?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cuánto me cuesta el envío?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Todos los envíos son gratis.</p>
+                  </div>
                 </div>
-                    <p>Todos los envíos son gratis.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Puedo retirar mi pedido por local?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    ¿Puedo retirar mi pedido por local?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Si, claro. Haciendo tu pedido por teléfono podes elegir la opción de retirarlo por nuestro local.</p>
+                  </div>
                 </div>
-                    <p>Si, claro. Haciendo tu pedido por teléfono podes elegir la opción de retirarlo por nuestro local.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Hasta donde hacen envíos?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    ¿Hasta dónde hacen envíos?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Entregamos pedidos en Palermo, dentro del área que limitan las Av. Libertador, Av. Scalabrini Ortiz, Av. Córdoba y Av. Lacroze.</p>
+                  </div>
                 </div>
-                    <p>Entregamos pedidos en Palermo, dentro del área que limitan las Av. Libertador, Av. Scalabrini Ortiz, Av. Córdoba y Av. Lacroze.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Puedo pedir por Whatsapp o por Instagram?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    ¿Puedo pedir por Whatsapp o por Instagram?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Por el momento sólo tomamos pedidos por nuestras lineas de teléfono.</p>
+                  </div>
                 </div>
-                    <p>Por el momento sólo tomamos pedidos por nuestras lineas de teléfono.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Cuáles son los medios de pago?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    ¿Cuáles son los medios de pago?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Podés pagar en efectivo, con tarjetas de débito, de crédito o a través de Mercadopago con código QR.</p>
+                  </div>
                 </div>
-                    <p>Podés pagar en efectivo, con tarjetas de débito, de crédito o a través de Mercadopago con código QR.</p>
-            </div>
-            <div class="faqs-question">
-                <div class="faqs-question-title">
-                    <img src="../images/arrow-down.png" alt="arrow down">
-                    <h3>¿Puedo elegir la masa de la pizza?</h3>
+              </div>
+              <div class="accordion-item bg-transparent mb-4">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button bg-transparent text-white fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    ¿Puedo elegir la masa de la pizza?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fs-4">Claro que sí. Las pizzas son artesanales y en cualquiera de los 3 tamaños que ofrecemos poder elegir a la piedra o media masa.</p>
+                  </div>
                 </div>
-                    <p>Claro que sí. Las pizzas son artesanales y en cualquiera de los 3 tamaños que ofrecemos poder elegir a la piedra o media masa.</p>
-            </div>
-        </section>
-
+              </div>
+        </div>
     </main>
 
-    <footer class="footer">
-        <div class="social-networks">
+    <footer class="footer d-flex flex-column align-items-center py-5">
+        <div class="social-networks d-flex justify-content-center gap-5">
             <a href="https://www.instagram.com/allungatapizza/" target="_blank"><img src="../images/instagram-icon.png" alt="logo de instagram"></a>
             <a href="https://www.facebook.com/allungatapizza" target="_blank"><img src="../images/facebook-icon.png" alt="logo de facebook"></a>
         </div>
         <small>Copyright © 2021 - Allungata | La más grande de Palermo | Ciudad de Buenos Aires</small>
     </footer>
+
+    <!-- ----- Bootstrap JS ----- -->
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>

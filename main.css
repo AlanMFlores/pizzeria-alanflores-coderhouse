@@ -53,7 +53,8 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url('images/background.jpg');
-    background-size: contain;
+    background-size: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -84,6 +85,7 @@ p, h1, h2, h3 {
 }
 
 ::placeholder {
+    font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     color: var(--clr-paragraph-color);
 }
@@ -163,6 +165,7 @@ p, h1, h2, h3 {
 }
 
 .nav {
+    display: block;
     position: fixed;
     top: -200%;
     width: 100%;
@@ -215,7 +218,6 @@ p, h1, h2, h3 {
 
 .hero {
     position: relative;
-    padding: var(--columns-padding-mobile);
     margin-bottom: var(--margin-bottom-spacing-small);
 }
 
@@ -261,7 +263,6 @@ p, h1, h2, h3 {
     display: none;
     transform: rotate(180deg);
     top: -25px;
-    right: 0;
     position: absolute;
 }
 
@@ -361,7 +362,6 @@ p, h1, h2, h3 {
 
 .fainas, .pizzas, .empanadas {
     margin-bottom: var(--margin-bottom-spacing-medium);
-    padding: var(--columns-padding-mobile);
 }
 
 
@@ -439,7 +439,6 @@ p, h1, h2, h3 {
 
 .stars {
     width: 120px;
-    margin: 10px 0 20px 0;
 }
 
 hr {
@@ -513,10 +512,6 @@ table {
     margin-bottom: var(--margin-bottom-spacing-paragraph-small);
 }
 
-.menu {
-    padding: var(--columns-padding-mobile);
-}
-
 .menu-title {
     font-size: var(--font-size-titles);
     margin-bottom: var(--margin-bottom-spacing-paragraph);
@@ -528,28 +523,12 @@ table {
     color: var(--clr-secondary-color);
     font-size: var(--font-size-titles);
     text-align: center;
-    margin-bottom: var(--margin-bottom-spacing-paragraph-small);
 }
 
 .menu-size {
     display: none;
 }
 
-.menu-row {
-    display: block;
-    text-align: center;
-}
-
-.menu-description {
-    display: block;
-}
-
-.menu .prices, .prices-emp {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: var(--margin-bottom-spacing-small);
-}
 
 .menu h4 {
     color: var(--clr-white-color);
@@ -562,11 +541,6 @@ table {
     font-size: var(--font-size-paragraph);
     line-height: 30px;
     max-width: 600px;
-}
-
-.menu-description {
-    display: block;
-    margin-bottom: var(--margin-bottom-spacing-paragraph-small);
 }
 
 .menu-price {
@@ -588,26 +562,15 @@ table {
 /* ########## ########## FAQs ########## ########## */
 
 .faqs {
+    max-width: 1440px;
+    margin: 0 auto;
     width: 100%;
-    padding: var(--columns-padding-mobile);
-    margin-bottom: var(--margin-bottom-spacing-medium);
+    margin-bottom: var(--margin-bottom-spacing-large);
 }
 
 .faqs-title {
     font-size: var(--font-size-titles);
     margin-bottom: var(--margin-bottom-spacing-paragraph-small);
-    text-align: center;
-}
-
-.faqs-question {
-    margin-bottom: var(--margin-bottom-spacing-paragraph);
-}
-
-.faqs-question-title {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 10px;
 }
 
 .faqs-question-title h3 {
@@ -615,14 +578,10 @@ table {
     font-weight: 600;
 }
 
-.faqs-question-title img {
-    width: 17px;
-}
 
 .faqs-question p {
     color: var(--clr-paragraph-color);
     font-size: var(--font-size-nav);
-    line-height: 20px;
     margin-left: 42px;
 }
 
@@ -643,7 +602,6 @@ table {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: var(--columns-padding-mobile);
     margin-bottom: var(--margin-bottom-spacing-medium);
 }
 
@@ -738,7 +696,6 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--columns-padding-mobile);
     margin-bottom: var(--margin-bottom-spacing-medium);
 }
 
@@ -794,10 +751,6 @@ table {
 }
 
 .local {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
     padding: var(--columns-padding-mobile);
     margin-bottom: var(--margin-bottom-spacing-medium);
     background-color: var(--clr-main-color-transparent);
@@ -805,9 +758,6 @@ table {
     padding-bottom: 50px;
 }
 
-.local-info {
-    max-width: 500px;
-}
 
 .local-title {
     font-size: var(--font-size-titles);
@@ -926,10 +876,6 @@ table {
         left: 0%;
     }
 
-    .pizzas, .fainas, .empanadas {
-        padding: var(--columns-padding-tablet);
-    }
-
     .faqs {
         padding: var(--columns-padding-tablet);
     }
@@ -947,9 +893,6 @@ table {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--columns-padding);
-        padding-top: 50px;
-        padding-bottom: 50px;
         margin-bottom: var(--margin-bottom-spacing-small);
     }
     
@@ -989,9 +932,7 @@ table {
     
     .hero {
         position: relative;
-        padding-left: 150px;
         margin-bottom: var(--margin-bottom-spacing-medium);
-        overflow: hidden;
     }
 
     .main-title {
@@ -1123,7 +1064,6 @@ table {
 
     .fainas, .pizzas, .empanadas {
         margin-bottom: var(--margin-bottom-spacing-large);
-        padding: var(--columns-padding);
     }
 
     .product-title {
@@ -1212,7 +1152,6 @@ table {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: var(--columns-padding);
         margin-bottom: var(--margin-bottom-spacing-large);
     }
 
@@ -1242,7 +1181,6 @@ table {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: var(--columns-padding);
         margin-bottom: var(--margin-bottom-spacing-medium);
     }
 
@@ -1270,11 +1208,6 @@ table {
     }
 
     .local {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
         padding: var(--columns-padding);
         margin-bottom: var(--margin-bottom-spacing-large);
         height: 400px;
@@ -1282,11 +1215,13 @@ table {
     }
 
     .local-title {
+        text-align: left;
         font-size: var(--font-size-titles);
         margin-bottom: var(--margin-bottom-spacing-paragraph-small);
     }
 
     .local-description {
+        text-align: left;
         font-size: var(--font-size-paragraph);
         color: var(--clr-paragraph-color);
         line-height: 40px;
@@ -1295,6 +1230,7 @@ table {
     .local-map {
         width: 520px;
         height: 300px;
+        max-width: 520px;
     }
 
 }
@@ -1313,10 +1249,6 @@ table {
         margin-bottom: var(--margin-bottom-spacing-large);
     }
 
-    .menu {
-        padding: var(--columns-padding);
-    }
-
     .menu-head {
         display: flex;
     }
@@ -1328,23 +1260,25 @@ table {
     }
 
     .menu-category {
-        display: block;
+        display: flex;
         color: var(--clr-secondary-color);
         font-size: var(--font-size-titles);
         text-align: left;
-        margin-top: var(--margin-bottom-spacing-paragraph-small);
         margin-bottom: 10px;
     }
 
     .menu-row {
-        display: table-row;
+        display: flex;
         text-align: center;
         justify-content: space-between;
     }
 
     .menu-description {
         display: table-cell;
-        margin-bottom: var(--margin-bottom-spacing-paragraph-small);
+        text-align: left;
+    }
+
+    .menu-description h4, p {
         text-align: left;
     }
 
@@ -1388,7 +1322,6 @@ table {
 
 @media screen and (min-width: 1366px) {
     .header {
-        max-width: 1440px;
         margin: 0 auto 50px;
     }
 
@@ -1396,7 +1329,6 @@ table {
         display: block;
         transform: rotate(180deg);
         top: -25px;
-        right: 0;
         position: absolute;
     }
 

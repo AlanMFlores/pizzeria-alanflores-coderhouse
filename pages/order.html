@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
+    <!-- ----- Bootstrap ----- -->
+    <link rel="stylesheet" href="../bootstrap.css">
+
     <!-- ----- Stylesheet ----- -->
     <link rel="stylesheet" href="../main.css">
 
@@ -25,7 +28,7 @@
 <body>
 
     <!-- ----- Header ----- -->
-    <header class="header">
+    <header class="header container">
         <a href="../index.html">
             <img src="../images/logo.png" alt="allungata-logo" class="header-logo">
         </a>
@@ -52,34 +55,38 @@
     <main class="main-order">
 
         <!-- ----- Order ----- -->
-        <section class="order">
-            <h1 class="order-title">Hacé tu pedido</h1>
-            <p class="order-description">Podes hacer tu pedido llamando a cualquiera de nuestros teléfonos.</p>
-    
-            <div class="order-phones">
-                <div class="order-phones-number">
+        <section class="order container row flex-column mx-auto">
+            <div class="col text-center">
+                <h1 class="order-title fw-bold">Hacé tu pedido</h1>
+                <p class="order-description mx-auto">Podes hacer tu pedido llamando a cualquiera de nuestros teléfonos.</p>
+            </div>
+            <div class="order-phones d-flex justify-content-center col mx-auto">
+                <div class="order-phones-number justify-content-center">
                     <img src="../images/phone.png" alt="ícono de teléfono">
                     <p class="main-number">4777-4019</p>
                     <p class="secondary-numer">4899-1454</p>
                 </div>
             </div>
-    
-            <p class="order-menu">Podes ver todo nuestro menú y los precios <a href="menu.html">ACÁ</a></p>
+            <div class="col">
+                <p class="order-menu">Podes ver todo nuestro menú y los precios <a href="menu.html">ACÁ</a></p>
+            </div>
         </section>
 
         <!-- ----- Local ----- -->
-        <section class="local">
-            <div class="local-info">
+        <section class="local d-flex align-items-center row">
+            <div class="local-info col-lg-6">
                 <h2 class="local-title">Te esperamos en nuestro local</h2>
                 <p class="local-description">También podes acercarte a nuestro local, ubicado en la calle <strong>Bonpland 2456</strong>, en el barrio de Palermo.</p>
             </div>
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Bonpland%202456%2C%20buenos%20aires&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Bonpland 2456, buenos aires" aria-label="Bonpland 2456, buenos aires" class="local-map"></iframe>
+            <div class="col-lg-6 mx-auto d-flex justify-content-center">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Bonpland%202456%2C%20buenos%20aires&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Bonpland 2456, buenos aires" aria-label="Bonpland 2456, buenos aires" class="local-map"></iframe>
+            </div>
         </section>
     </main>
 
     <!-- ----- Footer ----- -->
-    <footer class="footer">
-        <div class="social-networks">
+    <footer class="footer d-flex flex-column align-items-center py-5">
+        <div class="social-networks d-flex justify-content-center gap-5">
             <a href="https://www.instagram.com/allungatapizza/" target="_blank"><img src="../images/instagram-icon.png" alt="logo de instagram"></a>
             <a href="https://www.facebook.com/allungatapizza" target="_blank"><img src="../images/facebook-icon.png" alt="logo de facebook"></a>
         </div>
