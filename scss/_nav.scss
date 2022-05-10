@@ -1,0 +1,51 @@
+/*
+########## ########## Nav ########## ##########
+*/
+
+.nav {
+    display: block;
+    position: fixed;
+    top: -200%;
+    width: 100%;
+    z-index: 5;
+    transition: 400ms;
+
+    &-list {
+        padding: 50px;
+        background-color: $clr-black-color;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: -1;
+    }
+
+    &-list-item {
+        padding: 20px;
+        list-style: none;
+        text-align: center;
+    }
+    
+}
+
+.hamb-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.pedir-btn {
+    background-color: $clr-main-color;
+    padding: 10px 23px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.pedir-btn:hover {
+    background-color: $clr-main-color-hover;
+}

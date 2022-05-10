@@ -1,0 +1,47 @@
+/*
+########## ########## Menú ########## ##########
+*/
+
+table {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: $spacing-paragraph-small;
+}
+
+.menu {
+    &-title {
+        font-size: $font-size-titles;
+        margin-bottom: $spacing-paragraph;
+        text-align: center;
+    }
+
+    &-menu-category {
+        display: block;
+        color: $clr-secondary-color;
+        font-size: $font-size-titles;
+        text-align: center;
+    }
+
+    &-size {
+        display: none;
+    }
+
+    h4 {
+        color: $clr-white-color;
+        font-size: $font-size-secondary-titles;
+        margin-bottom: 5px; 
+    }
+
+    &-description p {
+        color: $clr-paragraph-color;
+        font-size: $font-size-paragraph;
+        line-height: 30px;
+        max-width: 600px;
+    }
+
+    &-price {
+        color: $clr-white-color;
+        font-size: $font-size-paragraph;
+        text-align: center;
+    }
+}

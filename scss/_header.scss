@@ -1,0 +1,63 @@
+/*
+########## ########## Header ########## ##########
+*/
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+
+    &-logo {
+        width: 110px;
+    }
+}
+
+.hamb-menu {
+    z-index: 10;
+    transition: 400ms;
+}
+
+.hamb-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-bar {
+        width: 32px;
+        height: 4px;
+        background-color: $clr-white-color;
+    }
+}
+
+.cross-menu {
+    display: none;
+    width: 32px;
+}
+
+#check-btn {
+    display: none;
+
+    &:checked ~ .nav {
+        top: 0;
+    }
+
+    &:checked ~ .hamb-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+
+    &:checked ~ .hamb-menu .btn-menu {
+        display: none;
+    }
+
+    &:checked ~ .hamb-menu .cross-menu {
+        display: block;
+    }
+}
+
+

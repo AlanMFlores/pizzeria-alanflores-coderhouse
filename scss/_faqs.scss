@@ -1,0 +1,26 @@
+/*
+########## ########## FAQs ########## ##########
+*/
+
+.faqs {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: $spacing-large;
+    
+    &-title {
+        font-size: $font-size-titles;
+        margin-bottom: $spacing-paragraph-small;
+    }
+
+    &-question-title h3 {
+        font-size: $font-size-paragraph;
+        font-weight: 600;
+    }
+
+    &-question p {
+        color: $clr-paragraph-color;
+        font-size: $font-size-nav;
+        margin-left: 42px;
+    }
+}
