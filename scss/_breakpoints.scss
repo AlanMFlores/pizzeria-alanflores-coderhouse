@@ -144,9 +144,17 @@
         
     }
 
-    .main-home, .main-menu, .main-order {
+    .main-home {
         max-width: 1440px;
         margin: 0 auto;
+    }
+
+    .main-menu {
+        @extend .main-home;
+    }
+
+    .main-order {
+        @extend .main-home;
     }
     
     .hero {
@@ -276,11 +284,7 @@
     }
     
     .fainas-articles, .empanadas-articles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 45px;
-        margin: 0 auto;
+        @include grid-articles;
     }
 
     .fainas, .pizzas, .empanadas {

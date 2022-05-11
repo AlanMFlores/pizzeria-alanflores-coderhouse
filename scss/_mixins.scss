@@ -1,0 +1,11 @@
+/*
+########## ########## Mixins ########## ##########
+*/
+
+@mixin grid-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    margin: 0 auto;
+}
