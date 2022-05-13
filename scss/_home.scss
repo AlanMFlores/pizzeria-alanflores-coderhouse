@@ -10,24 +10,24 @@
 
 .hero {
     position: relative;
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-x-small;
 
     .main {
         &-title {
-            margin-bottom: $spacing-paragraph;
+            margin-bottom: $spacing-x-small;
             font-size: $font-size-secondary-titles;
             font-weight: 300;
             text-align: center;
         }
     
         &-slogan {
-            margin-bottom: $spacing-paragraph-small;
+            margin-bottom: $spacing-x-small;
             font-size: $font-size-titles;
             text-align: center;
         }
     
         &-info {
-            margin-bottom: $spacing-paragraph;
+            margin-bottom: $spacing-x-small;
             font-weight: 300;
             font-size: $font-size-nav;
             text-align: center;
@@ -66,7 +66,7 @@
     justify-content: center;
     gap: 20px;
     margin: 0 auto;
-    margin-top: $spacing-paragraph;
+    margin-top: $spacing-x-small;
 
     &-square {
         height: 250px;
@@ -146,7 +146,7 @@
     &-title {
         font-family: 'Lobster', cursive;
         font-size: $font-size-titles;
-        margin-bottom: $spacing-paragraph;
+        margin-bottom: $spacing-x-small;
         text-align: center;
     }
 

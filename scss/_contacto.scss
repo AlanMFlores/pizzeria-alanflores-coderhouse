@@ -11,7 +11,7 @@
 
     &-title {
         font-size: $font-size-titles;
-        margin-bottom: $spacing-paragraph-small;
+        margin-bottom: $spacing-x-small;
     }
 
     &-description {
@@ -41,7 +41,7 @@
             border: 2px solid $clr-white-color;
             border-radius: 5px;
             padding-left: 20px;
-            margin-bottom: $spacing-paragraph-small;
+            margin-bottom: $spacing-x-small;
         }
 
         textarea {
@@ -58,7 +58,7 @@
             display: flex;
             align-items: center;
             padding: 20px 25px 0;
-            margin-bottom: $spacing-paragraph-small;
+            margin-bottom: $spacing-x-small;
         }
 
         .newsletter label {

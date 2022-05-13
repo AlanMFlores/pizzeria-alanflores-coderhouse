@@ -10,12 +10,12 @@
 
     &-title {
         font-size: $font-size-titles;
-        margin-bottom: $spacing-paragraph-small;
+        margin-bottom: $spacing-x-small;
     }
 
     &-description {
         max-width: 420px;
-        margin-bottom: $spacing-paragraph-small;
+        margin-bottom: $spacing-x-small;
         font-size: $font-size-nav;
         color: $clr-paragraph-color;
         text-align: center;
@@ -26,7 +26,7 @@
         display: grid;
         grid-template: repeat(2, 1fr)/ 50px 1fr;
         align-items: center;
-        margin-bottom: $spacing-small;
+        margin-bottom: $spacing-x-small;
         gap: 25px;
 
         p {
@@ -69,7 +69,7 @@
 
     &-title {
         font-size: $font-size-titles;
-        margin-bottom: $spacing-paragraph-small;
+        margin-bottom: $spacing-x-small;
         text-align: center;
     }
 

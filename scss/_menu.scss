@@ -5,13 +5,13 @@
 table {
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: $spacing-paragraph-small;
+    margin-bottom: $spacing-x-small;
 }
 
 .menu {
     &-title {
         font-size: $font-size-titles;
-        margin-bottom: $spacing-paragraph;
+        margin-bottom: $spacing-x-small;
         text-align: center;
     }
 
