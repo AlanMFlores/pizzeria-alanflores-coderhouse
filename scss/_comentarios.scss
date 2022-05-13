@@ -74,28 +74,28 @@
             line-height: 30px;
         }
     }
-}
-
-.stars {
-    width: 120px;
-}
-
-hr {
-    margin-bottom: $spacing-paragraph-small;
-}
-
-.slide-circles {
-    display: flex;
-    gap: 10px;
-}
-
-.circles {
-    width: 18px;
-    height: 18px;
-    background-color: rgba(255,255,255, .6);
-    border-radius: 50%;
-}
-
-.selected {
-    background-color: $clr-secondary-color;
+    
+    .stars {
+        width: 120px;
+    }
+    
+    hr {
+        margin-bottom: $spacing-paragraph-small;
+    }
+    
+    .slide-circles {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .circles {
+        width: 18px;
+        height: 18px;
+        background-color: rgba(255,255,255, .6);
+        border-radius: 50%;
+    }
+    
+    .selected {
+        background-color: $clr-secondary-color;
+    }
 }

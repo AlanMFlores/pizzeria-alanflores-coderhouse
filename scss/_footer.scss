@@ -11,15 +11,15 @@
     gap: 25px;
     height: 120px;
     background-color: $clr-black-darkest-color;
-}
-
-.social-networks {
-    display: flex;
-    gap: 30px;
-}
-
-small {
-    text-align: center;
-    color: $clr-white-color;
-    font-size: 1rem;
+    
+    .social-networks {
+        display: flex;
+        gap: 30px;
+    }
+    
+    small {
+        text-align: center;
+        color: $clr-white-color;
+        font-size: 1rem;
+    }
 }

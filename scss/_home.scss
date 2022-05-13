@@ -4,59 +4,60 @@
 
 /* ----- Hero ----- */
 
+.main-wrapper {
+    overflow: hidden;
+}
+
 .hero {
     position: relative;
     margin-bottom: $spacing-small;
-}
 
-.main {
-    &-title {
-        margin-bottom: $spacing-paragraph;
-        font-size: $font-size-secondary-titles;
-        font-weight: 300;
+    .main {
+        &-title {
+            margin-bottom: $spacing-paragraph;
+            font-size: $font-size-secondary-titles;
+            font-weight: 300;
+            text-align: center;
+        }
+    
+        &-slogan {
+            margin-bottom: $spacing-paragraph-small;
+            font-size: $font-size-titles;
+            text-align: center;
+        }
+    
+        &-info {
+            margin-bottom: $spacing-paragraph;
+            font-weight: 300;
+            font-size: $font-size-nav;
+            text-align: center;
+        }
+    }
+    
+    .allungata-title {
+        color: $clr-secondary-color;
+    }
+    
+    .hero-btns {
         text-align: center;
     }
-
-    &-slogan {
-        margin-bottom: $spacing-paragraph-small;
-        font-size: $font-size-titles;
-        text-align: center;
+    
+    .hero-btns a {
+        display: inline-block;
     }
-
-    &-info {
-        margin-bottom: $spacing-paragraph;
-        font-weight: 300;
-        font-size: $font-size-nav;
-        text-align: center;
+    
+    .hero-btns .pedir-btn {
+        margin-right: 20px;
     }
-
-    &-wrapper {
-        overflow: hidden;
+    
+    .pizza-hero {
+        display: none;
+        transform: rotate(180deg);
+        top: -25px;
+        position: absolute;
     }
 }
 
-.allungata-title {
-    color: $clr-secondary-color;
-}
-
-.hero-btns {
-    text-align: center;
-}
-
-.hero-btns a {
-    display: inline-block;
-}
-
-.hero-btns .pedir-btn {
-    margin-right: 20px;
-}
-
-.pizza-hero {
-    display: none;
-    transform: rotate(180deg);
-    top: -25px;
-    position: absolute;
-}
 
 /* ----- Pizzas ----- */
 
@@ -80,55 +81,56 @@
             object-position: -180px; 
         }
     }
-}
-
-.capresse-calabresa {
-    display: none;
-}
-
-.donnarosa {
-    img {
-        object-position: 100%;
+    
+    .capresse-calabresa {
+        display: none;
+    }
+    
+    .donnarosa {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .fugazzetarellena {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .jamonymorrones {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .muzzarella {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .napolitanarellena {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .napolitanarellena {
+        img {
+            object-position: 100%;
+        }
+    }
+    
+    .capresse-calabresa-mediana {
+        img {
+            object-fit: contain;
+            object-position: center;
+            position: relative;
+        }
     }
 }
 
-.fugazzetarellena {
-    img {
-        object-position: 100%;
-    }
-}
-
-.jamonymorrones {
-    img {
-        object-position: 100%;
-    }
-}
-
-.muzzarella {
-    img {
-        object-position: 100%;
-    }
-}
-
-.napolitanarellena {
-    img {
-        object-position: 100%;
-    }
-}
-
-.napolitanarellena {
-    img {
-        object-position: 100%;
-    }
-}
-
-.capresse-calabresa-mediana {
-    img {
-        object-fit: contain;
-        object-position: center;
-        position: relative;
-    }
-}
 
 .fainas-articles, .empanadas-articles {
     @include grid-articles

@@ -34,62 +34,62 @@
                 object-position: right;
             }
         }
-    }
 
-    .calabresa {
-        display: block;
-        grid-area: 1 / 1 / 2 / 3;
-    }
-
-    .jamonymorrones {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .donnarosa {
-        grid-area: 2 / 2 / 3 / 3;
-    }
-
-    .capresse {
-        grid-area: 3 / 1 / 4 / 3;
-
-        img {
-            transform: rotate(180deg);
+        .calabresa {
+            display: block;
+            grid-area: 1 / 1 / 2 / 3;
         }
-    }
-
-    .muzzarella {
-        grid-area: 4 / 1 / 5 / 2;
-
-        img {
-            transform: rotate(180deg);
+    
+        .jamonymorrones {
+            grid-area: 2 / 1 / 3 / 2;
         }
-    }
-
-    .fugazzetarellena {
-        grid-area: 4 / 2 / 5 / 3;
-
-        img {
-            transform: rotate(180deg);   
+    
+        .donnarosa {
+            grid-area: 2 / 2 / 3 / 3;
         }
-    }
-
-    .capresse-calabresa {
-        display: block;
-        grid-area: 5 / 1 / 6 / 3;
-    }
-
-    .napolitanarellena {
-        grid-area: 6 / 1 / 7 / 2;
-    }
-    .capresse-calabresa-mediana {
-        grid-area: 6 / 2 / 7 / 3;
-
-        img {
-            width: 250px;
-            object-fit: contain;
-            object-position: center;
-            position: relative;
-            left: 0%;
+    
+        .capresse {
+            grid-area: 3 / 1 / 4 / 3;
+    
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    
+        .muzzarella {
+            grid-area: 4 / 1 / 5 / 2;
+    
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    
+        .fugazzetarellena {
+            grid-area: 4 / 2 / 5 / 3;
+    
+            img {
+                transform: rotate(180deg);   
+            }
+        }
+    
+        .capresse-calabresa {
+            display: block;
+            grid-area: 5 / 1 / 6 / 3;
+        }
+    
+        .napolitanarellena {
+            grid-area: 6 / 1 / 7 / 2;
+        }
+        .capresse-calabresa-mediana {
+            grid-area: 6 / 2 / 7 / 3;
+    
+            img {
+                width: 250px;
+                object-fit: contain;
+                object-position: center;
+                position: relative;
+                left: 0%;
+            }
         }
     }
 
@@ -101,19 +101,19 @@
 /* ----- 1024px ----- */
 
 @media screen and (min-width: 1024px) {
-    .hamb-menu {
-        display: none;
-    }
-
+    
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: $spacing-small;
-
+        
         &-logo {
             width: 134px;
+        }
 
+        .hamb-menu {
+            display: none;
         }
     }
     
@@ -160,34 +160,43 @@
     .hero {
         position: relative;
         margin-bottom: $spacing-medium;
-    }
 
-    .main {
-        &-title {
-            font-weight: 300;
-            margin-bottom: $spacing-paragraph;
-            font-size: $font-size-titles;
+        .main {
+            &-title {
+                font-weight: 300;
+                margin-bottom: $spacing-paragraph;
+                font-size: $font-size-titles;
+                text-align: left;
+            }
+    
+            &-slogan {
+                width: 480px;
+                margin-bottom: $spacing-paragraph-small;
+                font-size: $font-size-hero;
+                text-align: left;
+            }
+    
+            &-info {
+                margin-bottom: $spacing-paragraph;
+                font-weight: 300;
+                font-size: $font-size-secondary-titles;
+                text-align: left
+            }
+        }
+    
+        .hero-btns {
             text-align: left;
         }
 
-        &-slogan {
-            width: 480px;
-            margin-bottom: $spacing-paragraph-small;
-            font-size: $font-size-hero;
-            text-align: left;
-        }
-
-        &-info {
-            margin-bottom: $spacing-paragraph;
-            font-weight: 300;
-            font-size: $font-size-secondary-titles;
-            text-align: left
+        .pizza-hero {
+            display: block;
+            transform: rotate(180deg);
+            top: -25px;
+            right: -280px;
+            position: absolute;
         }
     }
 
-    .hero-btns {
-        text-align: left;
-    }
 
     .large-divider {
         display: block;
@@ -198,14 +207,6 @@
     .small-divider {
         display: none;
         text-align: center;
-    }
-
-    .pizza-hero {
-        display: block;
-        transform: rotate(180deg);
-        top: -25px;
-        right: -280px;
-        position: absolute;
     }
     
     .pizzas-grid {
@@ -228,60 +229,61 @@
                 object-fit: cover;
             }
         }
-    }
 
-    .calabresa {
-        grid-area: 1 / 1 / 2 / 3;
-        display: block;
-    }
-
-    .jamonymorrones {
-        grid-area: 1 / 3 / 2 / 4;
-
-        img {
-            transform: rotate(180deg);
+        .calabresa {
+            grid-area: 1 / 1 / 2 / 3;
+            display: block;
+        }
+    
+        .jamonymorrones {
+            grid-area: 1 / 3 / 2 / 4;
+    
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        
+        .donnarosa {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+    
+        .capresse {
+            grid-area: 2 / 2 / 3 / 4;
+        }
+        
+        .fugazzetarellena {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        
+        .muzzarella {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+        
+        .napolitanarellena {
+            grid-area: 3 / 3 / 4 / 4;
+    
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    
+        .capresse-calabresa {
+            display: block;
+            grid-area: 4 / 1 / 5 / 3;
+        }
+        
+        .capresse-calabresa-mediana {
+            grid-area: 4 / 3 / 5 / 4;
+    
+            img {
+                width: 350px;
+                object-fit: contain;
+                position: relative;
+                left: -21%;
+            }
         }
     }
-    
-    .donnarosa {
-        grid-area: 2 / 1 / 3 / 2;
-    }
 
-    .capresse {
-        grid-area: 2 / 2 / 3 / 4;
-    }
-    
-    .fugazzetarellena {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-    
-    .muzzarella {
-        grid-area: 3 / 2 / 4 / 3;
-    }
-    
-    .napolitanarellena {
-        grid-area: 3 / 3 / 4 / 4;
-
-        img {
-            transform: rotate(180deg);
-        }
-    }
-
-    .capresse-calabresa {
-        display: block;
-        grid-area: 4 / 1 / 5 / 3;
-    }
-    
-    .capresse-calabresa-mediana {
-        grid-area: 4 / 3 / 5 / 4;
-
-        img {
-            width: 350px;
-            object-fit: contain;
-            position: relative;
-            left: -21%;
-        }
-    }
     
     .fainas-articles, .empanadas-articles {
         @include grid-articles;
@@ -342,13 +344,14 @@
                 line-height: 35px;
             }
         }
+
+        .carrousel {
+            width: 600px;
+            height: auto;
+            overflow: hidden;
+        }
     }
 
-    .carrousel {
-        width: 600px;
-        height: auto;
-        overflow: hidden;
-    }
     
     .faqs {
         padding: $columns-padding-desktop;
@@ -510,17 +513,15 @@
                 text-align: left;
             }
         }
-    }
 
-    .menu {
         .prices {
             justify-content: space-between;
         }
-
+    
         .prices-emp {
             justify-content: left;
         }
-
+    
         &-size {
             display: table-cell;
             color: $clr-secondary-color;
@@ -531,13 +532,12 @@
         }
     }
 
-    .pizza-hero {
-        display: block;
-        transform: rotate(180deg);
-        top: -25px;
-        right: -150px;
-        position: absolute;
+    .hero {
+        .pizza-hero {
+            right: -150px;
+        }
     }
+
 
     .pizzas-grid-square {
         height: 250px;
@@ -545,6 +545,12 @@
         img {
             height: 100%;
             object-position: right;
+        }
+    }
+
+    .faqs {
+        &-title {
+            text-align: left;
         }
     }
 }
@@ -557,80 +563,91 @@
         margin: 0 auto 50px;
     }
 
-    .pizza-hero {
-        display: block;
-        transform: rotate(180deg);
-        top: -25px;
-        position: absolute;
+    .hero {
+        .pizza-hero {
+            display: block;
+            transform: rotate(180deg);
+            top: -25px;
+            position: absolute;
+        }
     }
+
 
     .pizzas-grid {
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(4, 250px);
         gap: 20px;
         margin-top: $spacing-paragraph;
-    }
 
-    .calabresa {
-        grid-area: 1 / 2 / 2 / 4;
-    }
+        .calabresa {
+            grid-area: 1 / 2 / 2 / 4;
+        }
+        
+        .capresse {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+        
+        .donnarosa {
+            grid-area: 2 / 3 / 3 / 4;
     
-    .capresse {
-        grid-area: 2 / 1 / 3 / 3;
-    }
+            img {
+                object-position: 100%;
+            }
+        }
+        
+        .fugazzetarellena {
+            grid-area: 3 / 1 / 4 / 2;
     
-    .donnarosa {
-        grid-area: 2 / 3 / 3 / 4;
-
-        img {
-            object-position: 100%;
+            img {
+                object-position: 100%;
+            }
+        }
+        
+        .jamonymorrones {
+            grid-area: 1 / 1 / 2 / 2;
+    
+            img {
+                object-position: 100%;
+            }
+        }
+        
+        .muzzarella {
+            grid-area: 2 / 4 / 3 / 5;
+    
+            img {
+                object-position: 100%;
+            }
+        }
+        
+        .napolitanarellena {
+            grid-area: 3 / 4 / 4 / 5;
+    
+            img {
+                object-position: 100%;
+            }
+        }
+        
+        .capresse-calabresa {
+            grid-area: 3 / 2 / 4 / 4;
+        }
+        
+        .capresse-calabresa-mediana {
+            grid-area: 1 / 4 / 2 / 5;
+    
+            img {
+                width: 350px;
+                object-fit: contain;
+                position: relative;
+                left: -21%;
+            }
         }
     }
-    
-    .fugazzetarellena {
-        grid-area: 3 / 1 / 4 / 2;
+}
 
-        img {
-            object-position: 100%;
-        }
-    }
-    
-    .jamonymorrones {
-        grid-area: 1 / 1 / 2 / 2;
-
-        img {
-            object-position: 100%;
-        }
-    }
-    
-    .muzzarella {
-        grid-area: 2 / 4 / 3 / 5;
-
-        img {
-            object-position: 100%;
-        }
-    }
-    
-    .napolitanarellena {
-        grid-area: 3 / 4 / 4 / 5;
-
-        img {
-            object-position: 100%;
-        }
-    }
-    
-    .capresse-calabresa {
-        grid-area: 3 / 2 / 4 / 4;
-    }
-    
-    .capresse-calabresa-mediana {
-        grid-area: 1 / 4 / 2 / 5;
-
-        img {
-            width: 350px;
-            object-fit: contain;
-            position: relative;
-            left: -21%;
+@media screen and (min-width: 1440px) {
+    .hero {
+        .pizza-hero {
+            right: -65px;
         }
     }
 }
