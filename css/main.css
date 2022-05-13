@@ -7833,21 +7833,22 @@ body {
   background-size: 100%;
   overflow-x: hidden; }
 
+.link-regular-color, a {
+  color: #FAFAFA; }
+
+.link-hover-color, a:hover, .page-selected {
+  color: #F49C26; }
+
 a {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #FAFAFA;
   text-decoration: none; }
-
-a:hover {
-  color: #F49C26; }
 
 p, h1, .h1, h2, .h2, h3, .h3 {
   color: #FAFAFA; }
 
 .page-selected {
-  font-weight: 700;
-  color: #F49C26; }
+  font-weight: 700; }
 
 .large-divider {
   display: none;
@@ -8105,10 +8106,10 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     margin-left: -400%; } }
 
 .comentarios {
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 30px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: rgba(101, 26, 49, 0.3);
@@ -8165,13 +8166,13 @@ hr {
 ########## ########## Nav ########## ##########
 */
 .footer {
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25px;
   height: 120px;
-  padding: 0 30px;
   background-color: #000000; }
 
 .social-networks {
@@ -8579,10 +8580,10 @@ table {
     height: auto;
     overflow: hidden; }
   .faqs {
+    padding: 0 150px;
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 150px;
     margin-bottom: 100px; }
     .faqs-title {
       font-size: 4rem;

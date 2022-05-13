@@ -351,10 +351,10 @@
     }
     
     .faqs {
+        padding: $columns-padding-desktop;
         max-width: 1440px;
         margin: 0 auto;
         width: 100%;
-        padding: $columns-padding;
         margin-bottom: $spacing-large;
 
         &-title {
@@ -436,7 +436,7 @@
 
 
     .local {
-        padding: $columns-padding;
+        padding: $columns-padding-desktop;
         margin-bottom: $spacing-large;
         height: 400px;
         background-color: $clr-main-color-transparent;
