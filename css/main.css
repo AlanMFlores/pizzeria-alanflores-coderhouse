@@ -7813,9 +7813,13 @@ textarea.form-control-lg {
 /*
 ########## ########## Variables ########## ##########
 */
-/* ----- Colors ----- */
-/* ----- Box Model Styles ----- */
-/* ----- Typography ----- */
+/* Colors */
+/* Box Model Styles */
+/* Typography */
+/*
+########## ########## Global ########## ##########
+*/
+/* Global Styles*/
 * {
   margin: 0;
   padding: 0;
@@ -7830,23 +7834,33 @@ body {
   background-size: 100%;
   overflow-x: hidden; }
 
+/* Map Links */
 .link-regular-color, a {
   color: #FAFAFA; }
 
 .link-hover-color, a:hover, .page-selected {
   color: #F49C26; }
 
+/* Links Styles */
 a {
   font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none; }
 
-p, h1, .h1, h2, .h2, h3, .h3 {
-  color: #FAFAFA; }
-
 .page-selected {
   font-weight: 700; }
 
+/* Font Styles */
+p, h1, .h1, h2, .h2, h3, .h3 {
+  color: #FAFAFA; }
+
+/* Placeholder */
+::placeholder {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #BEB4AE; }
+
+/* Dividers */
 .large-divider {
   display: none;
   text-align: center;
@@ -7855,11 +7869,6 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 .divider {
   text-align: center;
   margin-bottom: 25px; }
-
-::placeholder {
-  font-size: 1.4rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #BEB4AE; }
 
 /*
 ########## ########## Mixins ########## ##########
@@ -7935,6 +7944,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     background-color: transparent;
     border: none; }
 
+/* Order Button */
 .pedir-btn {
   background-color: #651A31;
   padding: 10px 23px;
@@ -7947,7 +7957,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 /*
 ########## ########## Main ########## ##########
 */
-/* ----- Hero ----- */
+/* Hero */
 .main-wrapper {
   overflow: hidden; }
 
@@ -7982,7 +7992,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     top: -25px;
     position: absolute; }
 
-/* ----- Pizzas ----- */
+/* Pizzas */
 .pizzas-grid {
   display: grid;
   justify-content: center;
@@ -8026,9 +8036,9 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   margin: 0 auto; }
 
 .fainas, .pizzas, .empanadas {
-  margin-bottom: calc($spacing-x-small * 3); }
+  margin-bottom: 75px; }
 
-/* ----- Productos ----- */
+/* Productos */
 .product-title {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
@@ -8055,11 +8065,13 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 /*
 ########## ########## Comentarios ########## ##########
 */
+/* Carrousel Container */
 .carrousel {
   width: 300px;
   height: auto;
   overflow: hidden; }
 
+/* Carrousel Animation*/
 @keyframes slider {
   0% {
     margin-left: 0%; }
@@ -8082,6 +8094,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   95% {
     margin-left: -400%; } }
 
+/* Comentarios Container */
 .comentarios {
   padding: 0 30px;
   display: flex;
@@ -8090,7 +8103,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: rgba(101, 26, 49, 0.3);
-  margin-bottom: calc($spacing-x-small * 3); }
+  margin-bottom: 75px; }
   .comentarios-slide {
     display: flex;
     width: 500%;
@@ -8157,11 +8170,13 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 /*
 ########## ########## Menú ########## ##########
 */
+/* Table Menú */
 table {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 25px; }
 
+/* Menú Container */
 .menu-title {
   font-size: 3rem;
   margin-bottom: 25px;
@@ -8199,7 +8214,7 @@ table {
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: calc($spacing-x-small * 4); }
+  margin-bottom: 100px; }
   .faqs-title {
     text-align: center;
     font-size: 3rem;
@@ -8220,7 +8235,7 @@ table {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: calc($spacing-x-small * 3); }
+  margin-bottom: 75px; }
   .contact-title {
     font-size: 3rem;
     margin-bottom: 25px; }
@@ -8281,7 +8296,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: calc($spacing-x-small * 3); }
+  margin-bottom: 75px; }
   .order-title {
     font-size: 3rem;
     margin-bottom: 25px; }
@@ -8318,9 +8333,10 @@ table {
 .secondary-numer {
   grid-area: 2 / 2 / 3 / 3; }
 
+/* Local Container */
 .local {
   padding: 0 30px;
-  margin-bottom: calc($spacing-x-small * 3);
+  margin-bottom: 75px;
   background-color: rgba(101, 26, 49, 0.3);
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -8399,7 +8415,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: calc($spacing-x-small * 2); }
+    margin-bottom: 50px; }
     .header-logo {
       width: 134px; }
     .header .hamb-menu {
@@ -8424,7 +8440,7 @@ table {
     margin: 0 auto; }
   .hero {
     position: relative;
-    margin-bottom: calc($spacing-x-small * 3); }
+    margin-bottom: 75px; }
     .hero .main-title {
       font-weight: 300;
       margin-bottom: 25px;
@@ -8507,7 +8523,7 @@ table {
     gap: 45px;
     margin: 0 auto; }
   .fainas, .pizzas, .empanadas {
-    margin-bottom: calc($spacing-x-small * 4); }
+    margin-bottom: 100px; }
   .product-title {
     font-family: 'Lobster', cursive;
     font-size: 6rem;
@@ -8526,7 +8542,7 @@ table {
     flex-direction: column;
     align-items: center;
     padding: 50px 150px;
-    margin-bottom: calc($spacing-x-small * 4);
+    margin-bottom: 100px;
     background-color: rgba(101, 26, 49, 0.3); }
     .comentarios-title {
       width: 425px;
@@ -8554,10 +8570,10 @@ table {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-    margin-bottom: calc($spacing-x-small * 4); }
+    margin-bottom: 100px; }
     .faqs-title {
       font-size: 4rem;
-      margin-bottom: calc($spacing-x-small * 2); }
+      margin-bottom: 50px; }
     .faqs-question-title h3, .faqs-question-title .h3 {
       font-size: 2rem;
       font-weight: 600; }
@@ -8570,7 +8586,7 @@ table {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: calc($spacing-x-small * 4); }
+    margin-bottom: 100px; }
     .contact-title {
       font-size: 4rem;
       margin-bottom: 25px; }
@@ -8589,7 +8605,7 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: calc($spacing-x-small * 3); }
+    margin-bottom: 75px; }
     .order-title {
       font-size: 4rem;
       margin-bottom: 25px; }
@@ -8601,13 +8617,13 @@ table {
       max-width: 420px; }
     .order-phones-number {
       display: flex;
-      margin-bottom: calc($spacing-x-small * 2); }
+      margin-bottom: 50px; }
     .order-menu {
       font-size: 1.8rem;
       color: #BEB4AE; }
   .local {
     padding: 0 150px;
-    margin-bottom: calc($spacing-x-small * 4);
+    margin-bottom: 100px;
     height: 400px;
     background-color: rgba(101, 26, 49, 0.3); }
     .local-title {
@@ -8632,7 +8648,7 @@ table {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    margin-bottom: calc($spacing-x-small * 4); }
+    margin-bottom: 100px; }
   .menu-head {
     display: flex; }
   .menu-title {
@@ -8726,3 +8742,9 @@ table {
 @media screen and (min-width: 1440px) {
   .hero .pizza-hero {
     right: -65px; } }
+
+@media screen and (min-width: 2560px) {
+  .main-faqs {
+    min-height: calc(100vh - 435px); }
+  .main-order {
+    height: calc(100vh - 405px); } }

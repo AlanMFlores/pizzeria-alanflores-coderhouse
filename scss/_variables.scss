@@ -2,7 +2,7 @@
 ########## ########## Variables ########## ##########
 */
 
- /* ----- Colors ----- */
+ /* Colors */
 
  $clr-white-color: #FAFAFA;
  $clr-paragraph-color: #BEB4AE;
@@ -14,19 +14,19 @@
  $clr-main-color-transparent: rgba(101, 26, 49, .3);
 
  
- /* ----- Box Model Styles ----- */
+ /* Box Model Styles */
 
  $columns-padding-desktop: 0 150px;
  $columns-padding-tablet: 0 75px;
  $columns-padding-mobile: 0 30px;
 
  $spacing-x-small: 25px;
- $spacing-small: calc($spacing-x-small * 2);
- $spacing-medium: calc($spacing-x-small * 3);
- $spacing-large: calc($spacing-x-small * 4);
+ $spacing-small: $spacing-x-small * 2;
+ $spacing-medium: $spacing-x-small * 3;
+ $spacing-large: $spacing-x-small * 4;
 
 
- /* ----- Typography ----- */
+ /* Typography */
 
  $font-size-hero: 6rem;
  $font-size-titles-pages: 4rem;

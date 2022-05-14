@@ -2,7 +2,7 @@
 ########## ########## Main ########## ##########
 */
 
-/* ----- Hero ----- */
+/* Hero */
 
 .main-wrapper {
     overflow: hidden;
@@ -59,7 +59,7 @@
 }
 
 
-/* ----- Pizzas ----- */
+/* Pizzas */
 
 .pizzas-grid {
     display: grid;
@@ -140,7 +140,7 @@
     margin-bottom: $spacing-medium;
 }
 
-/* ----- Productos ----- */
+/* Productos */
 
 .product {
     &-title {

@@ -1,3 +1,9 @@
+/*
+########## ########## Global ########## ##########
+*/
+
+/* Global Styles*/
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +21,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Map Links */
 
 $links: (
     regular: $clr-white-color,
@@ -26,6 +33,8 @@ $links: (
             color: $color;
         }
     }
+
+/* Links Styles */
     
 a {
     @extend .link-regular-color;
@@ -38,15 +47,27 @@ a:hover {
     @extend .link-hover-color;
 }
 
+.page-selected {
+    @extend .link-hover-color;
+    font-weight: 700;
+}
+
+/* Font Styles */
+
 p, h1, h2, h3 {
     color: $clr-white-color;
 }
 
-.page-selected {
-    @extend .link-hover-color;
-    font-weight: 700;
 
+/* Placeholder */
+
+::placeholder {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $clr-paragraph-color;
 }
+
+/* Dividers */
 
 .large-divider {
     display: none;
@@ -57,10 +78,4 @@ p, h1, h2, h3 {
 .divider {
     text-align: center;
     margin-bottom: $spacing-x-small;
-}
-
-::placeholder {
-    font-size: 1.4rem;
-    font-family: 'Montserrat', sans-serif;
-    color: $clr-paragraph-color;
 }

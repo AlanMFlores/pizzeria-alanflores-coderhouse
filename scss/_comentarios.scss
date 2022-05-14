@@ -2,11 +2,15 @@
 ########## ########## Comentarios ########## ##########
 */
 
+/* Carrousel Container */
+
 .carrousel {
     width: 300px;
     height: auto;
     overflow: hidden;
 }
+
+/* Carrousel Animation*/
 
 @keyframes slider {
     0% {margin-left: 0%;}
@@ -24,6 +28,8 @@
     80% {margin-left: -400%;}
     95% {margin-left: -400%;}
 }
+
+/* Comentarios Container */
 
 .comentarios {
     padding: $columns-padding-mobile;

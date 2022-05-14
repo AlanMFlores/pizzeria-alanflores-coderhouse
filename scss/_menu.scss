@@ -2,11 +2,15 @@
 ########## ########## Menú ########## ##########
 */
 
+/* Table Menú */
+
 table {
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: $spacing-x-small;
 }
+
+/* Menú Container */
 
 .menu {
     &-title {

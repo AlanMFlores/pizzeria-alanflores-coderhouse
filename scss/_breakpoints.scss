@@ -651,3 +651,13 @@
         }
     }
 }
+
+@media screen and (min-width: 2560px) {
+    .main-faqs {
+        min-height: calc(100vh - 435px);
+    }
+
+    .main-order {
+            height: calc(100vh - 405px)
+    }
+}
