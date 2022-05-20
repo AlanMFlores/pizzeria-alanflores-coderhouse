@@ -46,8 +46,13 @@
         text-align: center;
         line-height: 30px;
 
-        a {
-            color: $clr-secondary-color;
+        .ver-menu {
+            color: $clr-white-color;
+            transition: 300ms;
+
+            &:hover {
+                color: $clr-secondary-color;
+            }
         }
     }
 }

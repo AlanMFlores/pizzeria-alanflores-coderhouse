@@ -7954,13 +7954,14 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 
 /* Order Button */
 .pedir-btn {
+  color: #FAFAFA;
   background-color: #651A31;
   padding: 10px 23px;
   border-radius: 5px;
   transition: 300ms; }
-
-.pedir-btn:hover {
-  background-color: #491323; }
+  .pedir-btn:hover {
+    background-color: #491323;
+    color: #F49C26; }
 
 /*
 ########## ########## Main ########## ##########
@@ -8286,16 +8287,23 @@ table {
     .contact-form .newsletter label {
       font-size: 1.6rem;
       color: #BEB4AE;
-      line-height: 30px; }
+      line-height: 30px;
+      cursor: pointer; }
     .contact-form input[type='checkbox'] {
-      width: 30px; }
+      width: 30px;
+      cursor: pointer; }
   .contact .web-btn {
-    font-family: 'Montserrat', sans-serif;
     color: #FAFAFA;
     background-color: #651A31;
+    padding: 10px 23px;
+    border-radius: 5px;
+    transition: 300ms;
     font-weight: 600;
     border: none;
     cursor: pointer; }
+    .contact .web-btn:hover {
+      background-color: #491323;
+      color: #F49C26; }
 
 /*
 ########## ########## Order ########## ##########
@@ -8332,8 +8340,11 @@ table {
     color: #BEB4AE;
     text-align: center;
     line-height: 30px; }
-    .order-menu a {
-      color: #F49C26; }
+    .order-menu .ver-menu {
+      color: #FAFAFA;
+      transition: 300ms; }
+      .order-menu .ver-menu:hover {
+        color: #F49C26; }
 
 .main-number {
   grid-area: 1 / 2 / 2 / 3; }
@@ -8581,7 +8592,7 @@ table {
     margin-bottom: 100px; }
     .faqs-title {
       font-size: 4rem;
-      margin-bottom: 50px; }
+      margin-bottom: 25px; }
     .faqs-question-title h3, .faqs-question-title .h3 {
       font-size: 2rem;
       font-weight: 600; }
@@ -8661,7 +8672,6 @@ table {
     display: flex; }
   .menu-title {
     font-size: 4rem;
-    margin-bottom: 0;
     text-align: left; }
   .menu-category {
     display: flex;
@@ -8745,7 +8755,9 @@ table {
         width: 350px;
         object-fit: contain;
         position: relative;
-        left: -21%; } }
+        left: -21%; }
+  .fainas, .empanadas {
+    max-width: 1200px; } }
 
 @media screen and (min-width: 1440px) {
   .hero .pizza-hero {
@@ -8754,5 +8766,7 @@ table {
 @media screen and (min-width: 2560px) {
   .main-faqs {
     min-height: calc(100vh - 435px); }
+  .main-contact {
+    min-height: calc(100vh - 405px); }
   .main-order {
     height: calc(100vh - 405px); } }

@@ -65,17 +65,17 @@
             font-size: $font-size-nav;
             color: $clr-paragraph-color;
             line-height: 30px;  
+            cursor: pointer;
         }
 
         input[type='checkbox'] {
             width: 30px;
+            cursor: pointer;
         }
     }
 
     .web-btn {
-        font-family: 'Montserrat', sans-serif;
-        color: $clr-white-color;
-        background-color: $clr-main-color;
+        @include pedir-btn;
         font-weight: 600;
         border: none;
         cursor: pointer;
