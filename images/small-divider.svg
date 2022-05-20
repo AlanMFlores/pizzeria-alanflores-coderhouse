@@ -1,0 +1,10 @@
+<svg id="small-divider" xmlns="http://www.w3.org/2000/svg" width="212" height="4" viewBox="0 0 212 4">
+  <g id="Divider">
+    <line id="Línea_4" data-name="Línea 4" x2="91.643" transform="translate(0 2.138)" fill="none" stroke="#fafafa" stroke-width="1"/>
+    <line id="Línea_5" data-name="Línea 5" x2="91.643" transform="translate(120.357 2.138)" fill="none" stroke="#fafafa" stroke-width="1"/>
+    <g id="Elipse_12" data-name="Elipse 12" transform="translate(104)" fill="none" stroke="#fafafa" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>
