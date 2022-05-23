@@ -7968,6 +7968,10 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 /*
 ########## ########## Main ########## ##########
 */
+/* Main Wrapper*/
+.main-wrapper {
+  overflow: hidden; }
+
 /* Hero */
 .hero {
   position: relative;
