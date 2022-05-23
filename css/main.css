@@ -3529,10 +3529,9 @@ textarea.form-control-lg {
       transition: none; } }
   .accordion-button:not(.collapsed) {
     color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
+    background-color: #e7f1ff; }
     .accordion-button:not(.collapsed)::after {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F49C26'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
       transform: rotate(-180deg); }
   .accordion-button::after {
     flex-shrink: 0;
@@ -3550,17 +3549,13 @@ textarea.form-control-lg {
   .accordion-button:hover {
     z-index: 2; }
   .accordion-button:focus {
-    z-index: 3;
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+    z-index: 3; }
 
 .accordion-header {
   margin-bottom: 0; }
 
 .accordion-item {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #fff; }
   .accordion-item:first-of-type {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
@@ -7836,6 +7831,7 @@ textarea.form-control-lg {
 html {
   font-size: 62.5%; }
 
+/* Body Styles */
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("../images/background.webp");
@@ -7884,13 +7880,19 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 /*
 ########## ########## Header ########## ##########
 */
+/* Header */
 .header {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 50px 0; }
+  padding: 50px 0;
+  margin-bottom: 0;
+  /* Header Logo*/
+  /* Hamb Menu*/
+  /* Cross Menu */
+  /* Hamb Menu Animation*/ }
   .header-logo {
     width: 110px; }
   .header .hamb-menu {
@@ -7967,12 +7969,12 @@ p, h1, .h1, h2, .h2, h3, .h3 {
 ########## ########## Main ########## ##########
 */
 /* Hero */
-.main-wrapper {
-  overflow: hidden; }
-
 .hero {
   position: relative;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  /* Main Title */
+  /* Hero Buttons*/
+  /* Hero Image */ }
   .hero .main-title {
     margin-bottom: 25px;
     font-size: 2rem;
@@ -7991,10 +7993,10 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     color: #F49C26; }
   .hero .hero-btns {
     text-align: center; }
-  .hero .hero-btns a {
-    display: inline-block; }
-  .hero .hero-btns .pedir-btn {
-    margin-right: 20px; }
+    .hero .hero-btns a {
+      display: inline-block; }
+    .hero .hero-btns .pedir-btn {
+      margin-right: 20px; }
   .hero .pizza-hero {
     display: none;
     transform: rotate(180deg);
@@ -8037,6 +8039,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     object-position: center;
     position: relative; }
 
+/* Fainas & Empanadas Grids*/
 .fainas-articles, .empanadas-articles {
   display: flex;
   flex-wrap: wrap;
@@ -8044,6 +8047,7 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   gap: 45px;
   margin: 0 auto; }
 
+/* Fainas, Pizzas & Empanadas Containers*/
 .fainas, .pizzas, .empanadas {
   margin-bottom: 75px; }
 
@@ -8112,7 +8116,11 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: rgba(101, 26, 49, 0.3);
-  margin-bottom: 75px; }
+  margin-bottom: 75px;
+  /* Slide Container */
+  /* Comentarios Title */
+  /* Comentarios Card */
+  /* Stars Image */ }
   .comentarios-slide {
     display: flex;
     width: 500%;
@@ -8145,20 +8153,11 @@ p, h1, .h1, h2, .h2, h3, .h3 {
     width: 120px; }
   .comentarios hr {
     margin-bottom: 25px; }
-  .comentarios .slide-circles {
-    display: flex;
-    gap: 10px; }
-  .comentarios .circles {
-    width: 18px;
-    height: 18px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 50%; }
-  .comentarios .selected {
-    background-color: #F49C26; }
 
 /*
 ########## ########## Nav ########## ##########
 */
+/* Footer */
 .footer {
   padding: 0 30px;
   display: flex;
@@ -8167,7 +8166,8 @@ p, h1, .h1, h2, .h2, h3, .h3 {
   justify-content: center;
   gap: 25px;
   height: 120px;
-  background-color: #000000; }
+  background-color: #000000;
+  /* Footer Social Networks */ }
   .footer .social-networks {
     display: flex;
     gap: 30px; }
@@ -8219,6 +8219,7 @@ table {
 /*
 ########## ########## FAQs ########## ##########
 */
+/* FAQs Container*/
 .faqs {
   max-width: 1440px;
   margin: 0 auto;
@@ -8239,12 +8240,17 @@ table {
 /*
 ########## ########## Contacto ########## ##########
 */
+/* Contact Container*/
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 75px; }
+  margin-bottom: 75px;
+  /* Contact Title*/
+  /* Contact Description*/
+  /* Contact Form*/
+  /* Submit Form Button*/ }
   .contact-title {
     font-size: 3rem;
     margin-bottom: 25px; }
@@ -8308,6 +8314,7 @@ table {
 /*
 ########## ########## Order ########## ##########
 */
+/* Order Container*/
 .order {
   display: flex;
   flex-direction: column;
@@ -8335,6 +8342,10 @@ table {
       letter-spacing: 3px; }
     .order-phones-number img {
       grid-area: 1 / 1 / 3 / 3; }
+    .order-phones-number .main-number {
+      grid-area: 1 / 2 / 2 / 3; }
+    .order-phones-number .secondary-numer {
+      grid-area: 2 / 2 / 3 / 3; }
   .order-menu {
     font-size: 1.8rem;
     color: #BEB4AE;
@@ -8345,12 +8356,6 @@ table {
       transition: 300ms; }
       .order-menu .ver-menu:hover {
         color: #F49C26; }
-
-.main-number {
-  grid-area: 1 / 2 / 2 / 3; }
-
-.secondary-numer {
-  grid-area: 2 / 2 / 3 / 3; }
 
 /* Local Container */
 .local {
@@ -8712,12 +8717,15 @@ table {
 /* ----- 1366px ----- */
 @media screen and (min-width: 1366px) {
   .header {
-    margin: 0 auto 50px; }
-  .hero .pizza-hero {
-    display: block;
-    transform: rotate(180deg);
-    top: -25px;
-    position: absolute; }
+    margin: 0 auto 50px;
+    margin-bottom: 0; }
+  .hero {
+    margin-bottom: 100px; }
+    .hero .pizza-hero {
+      display: block;
+      transform: rotate(180deg);
+      top: -25px;
+      position: absolute; }
   .pizzas-grid {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(4, 250px);

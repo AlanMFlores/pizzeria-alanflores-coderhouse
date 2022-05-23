@@ -2,6 +2,8 @@
 ########## ########## Header ########## ##########
 */
 
+/* Header */
+
 .header {
     position: relative;
     display: flex;
@@ -9,11 +11,14 @@
     align-items: center;
     gap: 40px;
     padding: 50px 0;
+    margin-bottom: 0;
 
+    /* Header Logo*/
     &-logo {
         width: 110px;
     }
     
+    /* Hamb Menu*/
     .hamb-menu {
         z-index: 10;
         transition: 400ms;
@@ -32,34 +37,37 @@
         }
     }
     
+    /* Cross Menu */
     .cross-menu {
         display: none;
         width: 32px;
     }
     
+    /* Hamb Menu Animation*/
     #check-btn {
         display: none;
     
-        &:checked ~ .nav {
-            top: 0;
-        }
-    
-        &:checked ~ .hamb-menu {
-            position: fixed;
-            top: 0;
-            right: 0;
-            margin: 20px;
-        }
-    
-        &:checked ~ .hamb-menu .btn-menu {
-            display: none;
-        }
-    
-        &:checked ~ .hamb-menu .cross-menu {
-            display: block;
+        &:checked ~ {
+            .nav {
+                top: 0;
+            }
+
+            .hamb-menu {
+                position: fixed;
+                top: 0;
+                right: 0;
+                margin: 20px;
+            }
+
+            .hamb-menu .btn-menu {
+                display: none;
+            }
+          
+            .hamb-menu .cross-menu {
+                display: block;
+            }
         }
     }
 }
-
 
 

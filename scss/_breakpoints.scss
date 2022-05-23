@@ -560,9 +560,12 @@
 @media screen and (min-width: 1366px) {
     .header {
         margin: 0 auto 50px;
+        margin-bottom: 0;
     }
 
     .hero {
+        margin-bottom: 100px;
+        
         .pizza-hero {
             display: block;
             transform: rotate(180deg);

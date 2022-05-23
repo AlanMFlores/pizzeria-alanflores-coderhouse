@@ -14,6 +14,8 @@ html {
     font-size: 62.5%;
 }
 
+/* Body Styles */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url('../images/background.webp');
@@ -41,10 +43,10 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
-}
 
-a:hover {
-    @extend .link-hover-color;
+    &:hover {
+        @extend .link-hover-color;
+    }
 }
 
 .page-selected {

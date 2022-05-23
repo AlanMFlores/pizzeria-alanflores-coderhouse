@@ -3,14 +3,10 @@
 */
 
 /* Hero */
-
-.main-wrapper {
-    overflow: hidden;
-}
-
 .hero {
     position: relative;
     margin-bottom: $spacing-x-small;
+
 
     .main {
         &-title {
@@ -34,22 +30,26 @@
         }
     }
     
+    /* Main Title */
     .allungata-title {
         color: $clr-secondary-color;
     }
     
+    /* Hero Buttons*/
+
     .hero-btns {
         text-align: center;
+
+        a {
+            display: inline-block;
+        }
+
+        .pedir-btn {
+            margin-right: 20px;
+        }
     }
     
-    .hero-btns a {
-        display: inline-block;
-    }
-    
-    .hero-btns .pedir-btn {
-        margin-right: 20px;
-    }
-    
+    /* Hero Image */
     .pizza-hero {
         display: none;
         transform: rotate(180deg);
@@ -131,11 +131,12 @@
     }
 }
 
-
+/* Fainas & Empanadas Grids*/
 .fainas-articles, .empanadas-articles {
     @include grid-articles
 }
 
+/* Fainas, Pizzas & Empanadas Containers*/
 .fainas, .pizzas, .empanadas {
     margin-bottom: $spacing-medium;
 }

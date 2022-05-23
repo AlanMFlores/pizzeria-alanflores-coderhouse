@@ -41,12 +41,14 @@
     background-color: $clr-main-color-transparent;
     margin-bottom: $spacing-medium;
 
+    /* Slide Container */
     &-slide {
         display: flex;
         width: 500%;
         animation: slider 20s infinite ease-in-out;
     }
 
+    /* Comentarios Title */
     &-title {
         width: 225px;
         margin: 0 auto;
@@ -56,6 +58,7 @@
         font-family: 'Lobster', cursive;
     }
 
+    /* Comentarios Card */
     &-card {
         width: 100%;
         max-width: 600px;
@@ -81,27 +84,12 @@
         }
     }
     
+    /* Stars Image */
     .stars {
         width: 120px;
     }
     
     hr {
         margin-bottom: $spacing-x-small;
-    }
-    
-    .slide-circles {
-        display: flex;
-        gap: 10px;
-    }
-    
-    .circles {
-        width: 18px;
-        height: 18px;
-        background-color: rgba(255,255,255, .6);
-        border-radius: 50%;
-    }
-    
-    .selected {
-        background-color: $clr-secondary-color;
     }
 }
