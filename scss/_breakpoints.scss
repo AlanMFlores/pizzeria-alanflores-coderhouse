@@ -104,6 +104,14 @@
     }
 }
 
+/* ----- 600px ----- */
+
+@media screen and (min-width: 768px) {
+    .main-faqs {
+        height: calc(100vh - 430px);
+    }
+}
+
 /* ----- 1024px ----- */
 
 @media screen and (min-width: 1024px) {

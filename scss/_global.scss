@@ -18,9 +18,9 @@ html {
 /* Body Styles */
 
 body {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../images/background.jpg');
-    background-size: 100%;
     overflow-x: hidden;
 }
 

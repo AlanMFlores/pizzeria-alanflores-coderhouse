@@ -7834,9 +7834,9 @@ html {
 
 /* Body Styles */
 body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Montserrat', sans-serif;
-  background-image: url("../images/background.jpg");
-  background-size: 100%;
   overflow-x: hidden; }
 
 /* Map Links */
@@ -8450,6 +8450,11 @@ table {
         left: 0%; }
   .faqs {
     padding: 0 75px; } }
+
+/* ----- 600px ----- */
+@media screen and (min-width: 768px) {
+  .main-faqs {
+    height: calc(100vh - 430px); } }
 
 /* ----- 1024px ----- */
 @media screen and (min-width: 1024px) {
