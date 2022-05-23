@@ -7835,7 +7835,7 @@ html {
 /* Body Styles */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-image: url("../images/background.webp");
   background-size: 100%;
   overflow-x: hidden; }
 
@@ -8399,6 +8399,9 @@ table {
     overflow: hidden; } }
 
 @media screen and (min-width: 425px) and (orientation: landscape) {
+  body {
+    background-image: url("../images/background.webp");
+    background-size: 100%; }
   .nav-list {
     padding: 0; } }
 
