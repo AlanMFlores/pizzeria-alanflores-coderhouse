@@ -8388,6 +8388,10 @@ table {
     height: auto;
     overflow: hidden; } }
 
+@media screen and (min-width: 425px) and (orientation: landscape) {
+  .nav-list {
+    padding: 0; } }
+
 /* ----- 600px ----- */
 @media screen and (min-width: 600px) {
   .carrousel {
