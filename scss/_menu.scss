@@ -10,12 +10,65 @@ table {
     margin-bottom: $spacing-x-small;
 }
 
+/* Box Sizes*/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+    }
+
+    h4 {
+        font-size: $font-size-paragraph;
+        font-weight: 300;
+    }
+
+    &-sizes {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: $spacing-small;
+
+        &-title {
+            text-align: center;
+            margin-bottom: $spacing-x-small;
+        }
+
+        &-large {
+            img {
+                width: 290px;
+            }
+        }
+
+        &-medium {
+            img {
+                width: 160px;
+            }
+        }
+
+        &-small {
+            img {
+                width: 120px;
+            } 
+        }
+    }
+}
+
+
+
 /* Menú Container */
+
+.main-menu {
+    padding-bottom: $spacing-large;
+}
 
 .menu {
     &-title {
         font-size: $font-size-titles;
-        margin-bottom: $spacing-x-small;
+        margin-bottom: $spacing-small;
         text-align: center;
     }
 

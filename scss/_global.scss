@@ -11,6 +11,8 @@
 }
 
 html {
+    min-height: 100vh;
+    position: relative;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -18,6 +20,8 @@ html {
 /* Body Styles */
 
 body {
+    margin: 0;
+    margin-bottom: 120px;
     background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
@@ -60,7 +64,6 @@ a {
 p, h1, h2, h3 {
     color: $clr-white-color;
 }
-
 
 /* Placeholder */
 

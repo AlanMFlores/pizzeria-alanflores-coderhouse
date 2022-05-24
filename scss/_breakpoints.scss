@@ -104,11 +104,13 @@
     }
 }
 
-/* ----- 600px ----- */
+/* ----- 768px ----- */
 
 @media screen and (min-width: 768px) {
-    .main-faqs {
-        height: calc(100vh - 430px);
+    .box-sizes {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -396,7 +398,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: $spacing-large;
 
         &-title {
             font-size: $font-size-titles-pages;
@@ -454,7 +455,6 @@
 
     .local {
         padding: $columns-padding-desktop;
-        margin-bottom: $spacing-large;
         height: 400px;
         background-color: $clr-main-color-transparent;
 
@@ -491,7 +491,6 @@
         width: 100%;
         max-width: 100%;
         margin: 0;
-        margin-bottom: $spacing-large;
     }
 
     .menu {
@@ -501,7 +500,6 @@
 
         &-title {
             font-size: $font-size-titles-pages;
-            text-align: left;
         }
 
         &-category {

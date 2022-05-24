@@ -4,6 +4,10 @@
 
 /* Order Container*/
 
+.main-order {
+    padding-bottom: $spacing-large;
+}
+
 .order {
     display: flex;
     flex-direction: column;
@@ -43,10 +47,18 @@
 
         .main-number {
             grid-area: 1 / 2 / 2 / 3;
+
+            a {
+                font-size: $font-size-titles
+            }
         }
         
         .secondary-numer {
             grid-area: 2 / 2 / 3 / 3;
+
+            a {
+                font-size: $font-size-titles
+            }
         }
     }
 
@@ -71,10 +83,10 @@
 
 .local {
     padding: $columns-padding-mobile;
-    margin-bottom: $spacing-medium;
     background-color: $clr-main-color-transparent;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: 0;
 
     &-title {
         font-size: $font-size-titles;

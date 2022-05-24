@@ -2,7 +2,13 @@
 ########## ########## FAQs ########## ##########
 */
 
+
 /* FAQs Container*/
+
+.main-faqs {
+    padding-bottom: $spacing-large;
+}
+
 .faqs {
     max-width: 1440px;
     margin: 0 auto;
