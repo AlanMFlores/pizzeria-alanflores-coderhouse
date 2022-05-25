@@ -7854,7 +7854,8 @@ body {
 a {
   font-size: 1.6rem;
   font-weight: 600;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 300ms; }
 
 .page-selected {
   font-weight: 700; }
@@ -8449,21 +8450,25 @@ table {
 */
 /* ----- 425px ----- */
 @media screen and (min-width: 425px) {
+  /* Carousel */
   .carrousel {
     width: 400px;
     height: auto;
     overflow: hidden; } }
 
 @media screen and (min-width: 425px) and (orientation: landscape) {
+  /* Nav List */
   .nav-list {
     padding: 0; } }
 
 /* ----- 600px ----- */
 @media screen and (min-width: 600px) {
+  /* Carrousel */
   .carrousel {
     width: 500px;
     height: auto;
     overflow: hidden; }
+  /* Pizzas Grid */
   .pizzas-grid {
     max-width: 540px;
     grid-template: repeat(5, 1fr)/repeat(2, 1fr); }
@@ -8504,17 +8509,20 @@ table {
         object-position: center;
         position: relative;
         left: 0%; }
+  /* FAQs */
   .faqs {
     padding: 0 75px; } }
 
 /* ----- 768px ----- */
 @media screen and (min-width: 768px) {
+  /* Box Sizes */
   .box-sizes {
     flex-direction: row;
     align-items: center; } }
 
 /* ----- 1024px ----- */
 @media screen and (min-width: 1024px) {
+  /* Header */
   .header {
     display: flex;
     justify-content: space-between;
@@ -8524,6 +8532,7 @@ table {
       width: 134px; }
     .header .hamb-menu {
       display: none; }
+  /* Nav */
   .nav {
     width: auto;
     position: unset; }
@@ -8539,9 +8548,11 @@ table {
       display: inline-block; }
       .nav-list-item:nth-last-child(1) {
         margin-right: 0; }
+  /* Main Home */
   .main-home, .main-menu, .main-order {
     max-width: 1440px;
     margin: 0 auto; }
+  /* Hero */
   .hero {
     position: relative;
     margin-bottom: 75px; }
@@ -8568,6 +8579,7 @@ table {
       top: -25px;
       right: -280px;
       position: absolute; }
+  /* Dividers */
   .large-divider {
     display: block;
     margin: 0 auto;
@@ -8575,6 +8587,7 @@ table {
   .small-divider {
     display: none;
     text-align: center; }
+  /* Pizzas Grid */
   .pizzas-grid {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(3, 250px);
@@ -8620,14 +8633,17 @@ table {
         object-fit: contain;
         position: relative;
         left: -21%; }
+  /* Fainas, Empanadas Grids */
   .fainas-articles, .empanadas-articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 45px;
     margin: 0 auto; }
+  /* Fainas, Pizzas & Empanadas Container */
   .fainas, .pizzas, .empanadas {
     margin-bottom: 100px; }
+  /* Product Card */
   .product-title {
     font-family: 'Lobster', cursive;
     font-size: 6rem;
@@ -8641,13 +8657,15 @@ table {
   .product-card {
     display: inline-block;
     width: 280px; }
+  /* Comentarios */
   .comentarios {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 150px;
     margin-bottom: 100px;
-    background-color: rgba(101, 26, 49, 0.3); }
+    background-color: rgba(101, 26, 49, 0.3);
+    /* Carrousel */ }
     .comentarios-title {
       width: 425px;
       margin: 0 auto;
@@ -8669,6 +8687,7 @@ table {
       width: 600px;
       height: auto;
       overflow: hidden; }
+  /* FAQs */
   .faqs {
     padding: 0 150px;
     max-width: 1440px;
@@ -8685,6 +8704,7 @@ table {
       color: #BEB4AE;
       font-size: 1.8rem;
       margin-left: 42px; }
+  /* Contact */
   .contact {
     display: flex;
     flex-direction: column;
@@ -8704,6 +8724,7 @@ table {
       .contact-form label .newsletter label {
         font-size: 1.8rem;
         color: #BEB4AE; }
+  /* Order */
   .order {
     display: flex;
     flex-direction: column;
@@ -8724,6 +8745,7 @@ table {
     .order-menu {
       font-size: 1.8rem;
       color: #BEB4AE; }
+  /* Local */
   .local {
     padding: 0 150px;
     height: 400px;
@@ -8744,8 +8766,10 @@ table {
 
 /* ----- 1200px ----- */
 @media screen and (min-width: 1200px) {
+  /* Header */
   .header {
     flex-direction: row; }
+  /* Menú */
   table {
     width: 100%;
     max-width: 100%;
@@ -8780,24 +8804,30 @@ table {
     font-weight: 400;
     padding: 10px;
     text-align: center; }
+  /* Hero */
   .hero .pizza-hero {
     right: -150px; }
+  /* Pizzas Grid */
   .pizzas-grid-square {
     height: 250px; }
     .pizzas-grid-square img {
       height: 100%;
       object-position: right; }
+  /* FAQs */
   .faqs-title {
     text-align: left; }
+  /* TO Top Button */
   .to-top-btn {
     width: 64px;
     height: 64px; } }
 
 /* ----- 1366px ----- */
 @media screen and (min-width: 1366px) {
+  /* Header */
   .header {
     margin: 0 auto 50px;
     margin-bottom: 0; }
+  /* Hero */
   .hero {
     margin-bottom: 100px; }
     .hero .pizza-hero {
@@ -8805,6 +8835,7 @@ table {
       transform: rotate(180deg);
       top: -25px;
       position: absolute; }
+  /* Pizzas Grid */
   .pizzas-grid {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(4, 250px);
@@ -8843,17 +8874,11 @@ table {
         object-fit: contain;
         position: relative;
         left: -21%; }
+  /* Fainas & Empanadas Container*/
   .fainas, .empanadas {
     max-width: 1200px; } }
 
 @media screen and (min-width: 1440px) {
+  /* Hero*/
   .hero .pizza-hero {
     right: -65px; } }
-
-@media screen and (min-width: 2560px) {
-  .main-faqs {
-    min-height: calc(100vh - 435px); }
-  .main-contact {
-    min-height: calc(100vh - 405px); }
-  .main-order {
-    height: calc(100vh - 405px); } }

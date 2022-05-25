@@ -5,6 +5,8 @@
 /* ----- 425px ----- */
 
 @media screen and (min-width: 425px) {
+
+    /* Carousel */
     .carrousel {
         width: 400px;
         height: auto;
@@ -13,6 +15,8 @@
 }
 
 @media screen and (min-width: 425px) and (orientation: landscape) {
+
+    /* Nav List */
     .nav-list {
         padding: 0;
     }
@@ -22,12 +26,15 @@
 /* ----- 600px ----- */
 
 @media screen and (min-width: 600px) {
+
+    /* Carrousel */
     .carrousel {
         width: 500px;
         height: auto;
         overflow: hidden;
     }
 
+    /* Pizzas Grid */
     .pizzas-grid {
         max-width: 540px;
         grid-template: repeat(5, 1fr) / repeat(2, 1fr);
@@ -99,6 +106,7 @@
         }
     }
 
+    /* FAQs */
     .faqs {
         padding: $columns-padding-tablet;
     }
@@ -107,6 +115,8 @@
 /* ----- 768px ----- */
 
 @media screen and (min-width: 768px) {
+
+    /* Box Sizes */
     .box-sizes {
         flex-direction: row;
         align-items: center;
@@ -117,6 +127,7 @@
 
 @media screen and (min-width: 1024px) {
     
+    /* Header */
     .header {
         display: flex;
         justify-content: space-between;
@@ -132,6 +143,7 @@
         }
     }
     
+    /* Nav */
     .nav {
         width: auto;
         position: unset;
@@ -159,6 +171,8 @@
         
     }
 
+    /* Main Home */
+
     .main-home {
         max-width: 1440px;
         margin: 0 auto;
@@ -172,6 +186,8 @@
         @extend .main-home;
     }
     
+    /* Hero */
+
     .hero {
         position: relative;
         margin-bottom: $spacing-medium;
@@ -213,6 +229,7 @@
     }
 
 
+    /* Dividers */
     .large-divider {
         display: block;
         margin: 0 auto;
@@ -224,6 +241,7 @@
         text-align: center;
     }
     
+    /* Pizzas Grid */
     .pizzas-grid {
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(3, 250px);
@@ -299,15 +317,18 @@
         }
     }
 
+    /* Fainas, Empanadas Grids */
     
     .fainas-articles, .empanadas-articles {
         @include grid-articles;
     }
 
+    /* Fainas, Pizzas & Empanadas Container */
     .fainas, .pizzas, .empanadas {
         margin-bottom: $spacing-large;
     }
 
+    /* Product Card */
     .product {
         &-title {
             font-family: 'Lobster', cursive;
@@ -329,6 +350,7 @@
         }
     }
 
+    /* Comentarios */
     .comentarios {
         display: flex;
         flex-direction: column;
@@ -360,6 +382,7 @@
             }
         }
 
+        /* Carrousel */
         .carrousel {
             width: 600px;
             height: auto;
@@ -367,7 +390,7 @@
         }
     }
 
-    
+    /* FAQs */
     .faqs {
         padding: $columns-padding-desktop;
         max-width: 1440px;
@@ -392,6 +415,7 @@
         }
     }
 
+    /* Contact */
     .contact {
         display: flex;
         flex-direction: column;
@@ -421,6 +445,7 @@
         }
     }
 
+    /* Order */
     .order {
         display: flex;
         flex-direction: column;
@@ -452,6 +477,7 @@
     }
 
 
+    /* Local */
     .local {
         padding: $columns-padding-desktop;
         height: 400px;
@@ -482,10 +508,12 @@
 /* ----- 1200px ----- */
 
 @media screen and (min-width: 1200px) {
+    /* Header */
     .header {
         flex-direction: row;
     }
 
+    /* Menú */
     table {
         width: 100%;
         max-width: 100%;
@@ -542,13 +570,14 @@
         }
     }
 
+    /* Hero */
     .hero {
         .pizza-hero {
             right: -150px;
         }
     }
 
-
+    /* Pizzas Grid */
     .pizzas-grid-square {
         height: 250px;
 
@@ -558,12 +587,14 @@
         }
     }
 
+    /* FAQs */
     .faqs {
         &-title {
             text-align: left;
         }
     }
 
+    /* TO Top Button */
     .to-top-btn {
         width: 64px;
         height: 64px;
@@ -574,11 +605,14 @@
 /* ----- 1366px ----- */
 
 @media screen and (min-width: 1366px) {
+
+    /* Header */
     .header {
         margin: 0 auto 50px;
         margin-bottom: 0;
     }
 
+    /* Hero */
     .hero {
         margin-bottom: 100px;
         
@@ -590,7 +624,7 @@
         }
     }
 
-
+    /* Pizzas Grid */
     .pizzas-grid {
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(4, 250px);
@@ -661,29 +695,18 @@
         }
     }
 
+    /* Fainas & Empanadas Container*/
     .fainas, .empanadas {
         max-width: 1200px;
     }
 }
 
 @media screen and (min-width: 1440px) {
+
+    /* Hero*/
     .hero {
         .pizza-hero {
             right: -65px;
         }
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    .main-faqs {
-        min-height: calc(100vh - 435px);
-    }
-
-    .main-contact {
-        min-height: calc(100vh - 405px);
-    }
-
-    .main-order {
-            height: calc(100vh - 405px)
     }
 }
