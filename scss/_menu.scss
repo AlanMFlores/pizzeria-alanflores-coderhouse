@@ -12,6 +12,16 @@ table {
 
 /* Box Sizes*/
 
+.pizzas-sizes {
+    font-size: $font-size-secondary-titles;
+    margin-bottom: $spacing-x-small;
+    text-align: center;
+
+    b {
+        color: $clr-secondary-color;
+    }
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -19,6 +29,7 @@ table {
 
     img {
         object-fit: cover;
+        margin-bottom: 10px;
     }
 
     h4 {
@@ -29,6 +40,7 @@ table {
     &-sizes {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 25px;
         margin-bottom: $spacing-small;
 
@@ -67,9 +79,9 @@ table {
 
 .menu {
     &-title {
+        text-align: center;
         font-size: $font-size-titles;
         margin-bottom: $spacing-small;
-        text-align: center;
     }
 
     &-category {

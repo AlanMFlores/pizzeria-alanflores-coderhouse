@@ -8207,18 +8207,27 @@ table {
   margin-bottom: 25px; }
 
 /* Box Sizes*/
+.pizzas-sizes {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center; }
+  .pizzas-sizes b {
+    color: #F49C26; }
+
 .box {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .box img {
-    object-fit: cover; }
+    object-fit: cover;
+    margin-bottom: 10px; }
   .box h4, .box .h4 {
     font-size: 1.8rem;
     font-weight: 300; }
   .box-sizes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 25px;
     margin-bottom: 50px; }
     .box-sizes-title {
@@ -8236,9 +8245,9 @@ table {
   padding-bottom: 100px; }
 
 .menu-title {
+  text-align: center;
   font-size: 3rem;
-  margin-bottom: 50px;
-  text-align: center; }
+  margin-bottom: 50px; }
 
 .menu-category {
   display: block;
@@ -8502,8 +8511,7 @@ table {
 @media screen and (min-width: 768px) {
   .box-sizes {
     flex-direction: row;
-    align-items: center;
-    justify-content: center; } }
+    align-items: center; } }
 
 /* ----- 1024px ----- */
 @media screen and (min-width: 1024px) {
